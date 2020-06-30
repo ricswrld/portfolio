@@ -23,7 +23,7 @@ h1 {
     transition: .5s;
 }
 .media ul li .fa:hover {
-    color: #ffffff;
+    color: #000000;
 }
 .media ul li a {
     position: relative;
