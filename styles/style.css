@@ -33,7 +33,7 @@ nav{
     font-size: 16px;
 }
 .burger{
-    display:none;
+    display: none;
     cursor: pointer;
 }
 .burger div{
