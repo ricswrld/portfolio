@@ -5,7 +5,7 @@
 header
 {
   background-image: url(spaceimage.jpg);
-  height: 20vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -16,7 +16,7 @@ header
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  color: #fff
+  color: #ffffff
   text-align: center;
   font-family: 'Jura', sans-serif;
 }
