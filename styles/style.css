@@ -24,17 +24,20 @@ header
 h1{
   font-size: 60px;
   letter-spacing: 20px;
+  color: #ffffff
 }
 hr
 {
   width: 50%;
   margin: 30px auto;
   border: 1.5px solid #ffffff;
+  color: #ffffff
 }
 p
 {
 
 font-size: 20px;
 margin-bottom: 30px;
+color: #ffffff
 
 }
