@@ -16,8 +16,15 @@
                 src: url('fonts/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2') format('woff2'), url('fonts/7802e576-2ffa-4f22-a409-534355fbea79.woff') format('woff');
             }
 
-            div {
+            div.absolute {
                 position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                white-space: nowrap;
+            }
+             div.relative {
+                position:relative;
                 top:50%;
                 left:50%;
                 transform: translate(-50%,-50%);
@@ -26,10 +33,11 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="absolute">
             be the first to know 
+            <div class="relative" id="omnisend-embedded-v2-63505f253d33ad0a518e8b09"></div>
         </div>
         
     </body>
-    <div id="omnisend-embedded-v2-63505f253d33ad0a518e8b09"></div>
+    
 </html>
