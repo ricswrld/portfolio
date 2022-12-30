@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ricswrld.com
+Token: d8652ffe9f437e6149785fb3d4b0b7f81376410a7938153fc181f4e77ee001d4
