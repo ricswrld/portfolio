@@ -17,7 +17,7 @@ body {
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 26px;
   color: red;
   text-transform: uppercase;
   animation: flip 2s infinite;
