@@ -12,15 +12,19 @@ body {
   min-height: 100vh;
 }
 .waviy {
-  position: relative;
+  position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                white-space: nowrap;
 }
 .waviy span {
-  position: relative;
+  position: absolute;
   display: inline-block;
   font-size: 26px;
   color: red;
   text-transform: uppercase;
-  animation: flip 2s infinite;
+  animation: flip 3s infinite;
   animation-delay: calc(.2s * var(--i))
 }
 @keyframes flip {
