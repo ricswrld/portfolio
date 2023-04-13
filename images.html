@@ -1,14 +1,63 @@
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ricswrld</title>
     <link
         href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAzNv8AAAAAADOI/wBh1f8AAAD/AGH3/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERREQREREREUREREQRERFEQAAABEQREUAAIiIABBEUQCIjMiIEQRQAIzMzMgBBRAIjNVMyIEREAjNVVTMgREQCM1VVMyBERAIjNVMyIEQUACMzMzIAQRRAIiMyIgRBEUAAIiIABBERREAAAAREERERRERERBERERERREQRERH8PwAA8A8AAMADAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAAwAMAAPAPAAD8PwAA"
         rel="icon" type="image/x-icon" />
 
-    <style>
-        * {
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: -76px 0 0 -76px;
+  border: 5px solid light grey;
+  border-radius: 60%;
+  border-top: 5px solid grey;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+ * {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue LT W05 65 Medium", Helvetica, Arial, sans-serif;
             font-size: 15px;
             text-transform: uppercase;
@@ -80,10 +129,14 @@
             width: 50px;
 
         }
-    </style>
+</style>
 </head>
+<body onload="myFunction()" style="margin:0;">
 
-<body>
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom"></div>
+
 
     <div class="img_container">
 
@@ -242,9 +295,24 @@
         </div>
     </div>
 
-    </div>
-
 
 </body>
+  
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
 
 </html>
+
