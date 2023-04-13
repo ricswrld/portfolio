@@ -90,33 +90,8 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-    
-    import { useState } from 'react';
+  
 
-function App() {
-
-  const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-  const [isDark,setIsDark] = useState(isSystemDark)
-
-  const lightTheme = {
-    backgroundColor : "white",
-    color : "black"
-  }
-
-  const darkTheme = {
-    backgroundColor : "black",
-    color : "white"
-  }
-
-  return (
-    <div style={isDark?darkTheme:lightTheme}>
-      Hello World
-      <button onClick={()=>setIsDark(toggle =>!toggle)}>Switch Theme</button>
-    </div>
-  );
-}
-
-export default App;
 </script>
 
 </body>
