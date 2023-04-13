@@ -59,6 +59,17 @@
             div {
               
             }
+            
+             body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
            
         </style>
     </head>
@@ -73,6 +84,9 @@
 
 
            <div class="clock" id="txt"></div>
+            <div>
+      <button onclick="darkMode()">DARK MODE</button>
+    </div>
 
 <script>
 function startTime() {
@@ -91,7 +105,10 @@ function checkTime(i) {
   return i;
 }
   
-    
+     function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
 </script>
 
 </body>
