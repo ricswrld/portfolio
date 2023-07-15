@@ -106,32 +106,9 @@
         font-size: 25px;
       }
       
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
-      
-      
-     .button {
-  background-color: white;
-  border: none;
-  position:absolute;
-            top:33px;
-            left:15px;
-            text-align :left;
-  color: black;
-  padding: 2px 2px;
-  text-align: center;
-  font-family: 'Snell Roundhand', sans-serif;
-  font-size: 30px;
-  text-transform: lowercase;
-  text-decoration: none;
-display: inline-block;
-  cursor: pointer;
-  
-  
-}
-            
+     
+         
+         
               .bottomright {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue LT W05 65 Medium", Helvetica, Arial, sans-serif;
             text-transform: uppercase;
@@ -167,6 +144,16 @@ display: inline-block;
   z-index: 1;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: #121212;
+  }
+
+  body a {
+    color: #809fff;
+  }
+
         </style>
     </head>
 
@@ -192,8 +179,7 @@ display: inline-block;
  
            <div class="clock" id="txt"></div>
             <div>
-      <button class="button" onclick="darkMode()">night mode</button>
-      
+    
      <div class="film" id="txt"> Hit or Stand premiere</div>
     </div>
            
@@ -261,3 +247,4 @@ var x = setInterval(function() {
 </body>
 
 </html>
+
